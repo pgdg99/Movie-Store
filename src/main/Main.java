@@ -40,18 +40,18 @@ public class Main {
         blockbuster.searchClient("Pablo").addRentedMovie(blockbuster.searchMovie("The Matrix"), 5);
         blockbuster.searchClient("Pablo").addRentedMovie(blockbuster.searchMovie("Rogue One"), 2);
         blockbuster.searchClient("Pablo").addRentedMovie(blockbuster.searchMovie("The Matrix"), 6);
-        System.out.println(blockbuster.searchClient("Pablo").pay());
+        System.out.println("Pablo pays: " + blockbuster.searchClient("Pablo").pay() + "$");
         
         blockbuster.searchClient("Juan").addRentedMovie(blockbuster.searchMovie("The Matrix"), 1);
         blockbuster.searchClient("Juan").addRentedMovie(blockbuster.searchMovie("Rogue One"), 7);
-        System.out.println(blockbuster.searchClient("Juan").pay());
+        System.out.println("Juan pays: " + blockbuster.searchClient("Juan").pay() + "$");
         
         blockbuster.searchClient("Andres").addRentedMovie(blockbuster.searchMovie("Inglorious Basterds"), 15);
-        System.out.println(blockbuster.searchClient("Andres").pay());
+        System.out.println("Andres pays: " + blockbuster.searchClient("Andres").pay() + "$");
         
         blockbuster.searchClient("William").addRentedMovie(blockbuster.searchMovie("Black Panther"), 20);
-        System.out.println(blockbuster.searchClient("William").pay());
+        System.out.println("William pays: " + blockbuster.searchClient("William").pay() + "$");
         
-        System.out.println(blockbuster.searchMostRentedCat());
+        System.out.println("The most rented category was: " + blockbuster.searchMostRentedCat());
     }
 }
